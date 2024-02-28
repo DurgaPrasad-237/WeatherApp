@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+    </head>
+    <body>
+
+        <section class="container">
+            <div class="searchbox">
+                 <p><i class="fa fa-map-marker"></i></p> 
+                 <input class="inputarea" type="text" placeholder="Enter Your Location" />
+                 <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="weatherbox">
+                <img src="images/cloudy.png">
+                <p class="temperature">Temperature: 0&deg;C</p>
+                <p class="des">Broken Clouds</p>
+            </div>
+
+            <div class="weatherdetails">
+
+                <div>
+                    <img src="images/humidity.png">
+                    <p class="humidity">0%</p>
+                    <p>Humidity%</p>
+                </div>
+                <div>
+                    <img src="images/wind.png">
+                    <p class="wind">0km/h</p>
+                    <p>windspeed</p>
+
+                </div>
+
+            </div>
+
+            <div class="notfound">
+                <div class="box">
+                    <img src="images/not-found.png">
+                    <p>Oop's Location not found</p>
+                </div>
+                 
+            </div>
+
+
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

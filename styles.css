@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(6, 148, 200);
+}
+
+.container {
+    border: 2px solid transparent;
+    height: 80vh;
+    width: 60vh;
+    margin: 100px auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,105,167,1) 0%, rgba(36,116,133,1) 100%, rgba(9,9,121,1) 100%);
+    position:relative;
+    border-radius:20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    background-color: white;
+    margin-top:30px;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+  
+}
+
+.searchbox p {
+    font-size: 18px;
+    margin-left: 20px;
+    
+}
+
+.inputarea {
+    width: 40vh;
+    height: 30px;
+    margin-left: 30px;
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.inputarea:enabled{
+    border-radius:2px;
+    border:none;
+    outline:none; 
+   }
+
+.searchbox button {
+    font-size: 18px;
+    border:none;
+    background-color: transparent;
+}
+.searchbox button:hover{
+    border:2px solid black;
+}
+.weatherbox{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.weatherbox.active,.weatherdetails.active,.notfound.active{
+    visibility: visible;
+}
+.weatherbox,.weatherdetails,.notfound{
+    visibility: hidden;
+}
+.weatherbox img{
+    width:150px;
+    height:150px;
+    margin-top:20px;
+}
+.weatherbox p{
+    color:white;
+}
+.weatherdetails{
+
+    height:100px;
+    width:90%;
+    margin:0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.weatherdetails img{
+    height:50px;
+    width:50px;
+}
+.weatherdetails p{
+    color:white;
+}
+.notfound img{
+width:150px;
+height:150px;
+position: absolute;
+top:20vh;
+right:20vh;
+}
+.notfound p{
+    color:white;
+    position: absolute;
+top:40vh;
+right:19vh;
+}
